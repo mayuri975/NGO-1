@@ -20,11 +20,7 @@ public class MainController {
 		System.out.println("init login is reached");
         return "login";
     }
-	@RequestMapping(value="/logout",method= RequestMethod.GET)
-	public String showLogoutPage(ModelMap model) {
-		System.out.println("init logout is reached");
-        return "logout";
-	}
+	
 
     @RequestMapping(value="/login", method = RequestMethod.POST)
     public String showWelcomePage(ModelMap model, @RequestParam String name, @RequestParam String password){
